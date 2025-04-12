@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:4000', // your Express server
+    baseURL: 'https://mindcache.onrender.com', // your Express server
 });
 
 export default api;
