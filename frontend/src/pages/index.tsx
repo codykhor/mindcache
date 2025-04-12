@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import api from '../utils/api';
+import {Button} from "@geist-ui/react";
 
 type Highlight = {
     id: string;
@@ -21,6 +22,8 @@ export default function Home() {
     return (
         <div className="container my-4">
             <h1 className="display-4 mb-4">All Highlights</h1>
+            <button className="btn btn-dark mb-3" onClick={() => window.location.href = '/add'}>Add Highlight
+            </button>
             {highlights.map((h) => (
                 <div key={h.id} className="card mb-4 shadow-sm">
                     <div className="card-body">
